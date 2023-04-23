@@ -6,8 +6,9 @@ function [] = main(IMAGE_PATH, HEIGHT, WIDTH)
     fg = imresize(I, 2);
 
     % Generate background
+    blur = 15;
     delta = 60;    % hardcoded for this image, change if needed
-    bg = generate_background(HEIGHT, WIDTH, I, delta);
+    bg = generate_background(HEIGHT, WIDTH, I, blur, delta);
 
     % Overlay image onto the center of the background
     res = overlay_image(fg, bg);

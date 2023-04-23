@@ -1,5 +1,6 @@
 %{
     Given an image of size R x C, and target height H, target width W.
+    blur is the Gaussian blur sigma.
     delta specifies an amount to crop from the top and bottom of the new image.
 
     Upscale the image by a factor of H/R.
@@ -8,7 +9,7 @@
 
     Note that H is used for the scaling, and W is used for the cropping.
 %}
-function img = generate_background(H, W, image, delta)
+function img = generate_background(H, W, image, blur, delta)
     R = size(image, 1);
     C = size(image, 2);
 
@@ -17,7 +18,7 @@ function img = generate_background(H, W, image, delta)
     img = imresize(image, ratio);
 
     % Apply blur.
-    img = imgaussfilt(img, 15);
+    img = imgaussfilt(img, blur);
 
     % Crop the center of the image to size H x W.
     left = size(img, 2) / 2 - W / 2;
