@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Take in 3 parameters to pass to the matlab script
+# 1. The image to be processed
+# 2. The target height
+# 3. The target width
+
+# Check that the correct number of parameters were passed
+if [ $# -ne 3 ]; then
+    echo "Usage: $0 <image> <height> <width>"
+    exit 1
+fi
+
+# Run the matlab script
+matlab -nojvm -nodesktop -r "main('$1', $2, $3); exit;"
