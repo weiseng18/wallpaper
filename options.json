@@ -1,8 +1,12 @@
 {
-    "blur": 15,
-    "delta": 60,
-    "upscale": 2,
-    "border": 10,
+    "bg": {
+        "blur": 15,
+        "delta": 60
+    },
+    "fg": {
+        "upscale": 2,
+        "border": 10
+    },
     "height": 2778,
     "width": 1284
 }
