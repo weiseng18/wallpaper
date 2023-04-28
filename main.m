@@ -1,14 +1,17 @@
 function [] = main(IMAGE_PATH, HEIGHT, WIDTH)
+    % Constants
+    BLUR = 15;
+    DELTA = 60;    % crop from top and bottom
+    UPSCALE = 2;   % upscale foreground image
+
     % Read image
     I = imread("./images/" + IMAGE_PATH);
 
     % Generate foreground
-    fg = imresize(I, 2);
+    fg = imresize(I, UPSCALE);
 
     % Generate background
-    blur = 15;
-    delta = 60;    % hardcoded for this image, change if needed
-    bg = generate_background(HEIGHT, WIDTH, I, blur, delta);
+    bg = generate_background(HEIGHT, WIDTH, I, BLUR, DELTA);
 
     % Overlay image onto the center of the background
     res = overlay_image(fg, bg);
