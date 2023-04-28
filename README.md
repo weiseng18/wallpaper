@@ -37,8 +37,25 @@ Currently it assumes that height > width.
     "rotate": 0,
     "height": 2778,
     "width": 1284
-}</pre>
-        </td>
+}</pre></td>
+    </tr>
+    <tr>
+        <td><img src="images/kyu-kurarin.jpeg" width="200px"/></td>
+        <td><img src="images/kyu-kurarin_wallpaper.png" width="200px"/></td>
+        <td><pre>
+{
+    "bg": {
+        "blur": 25,
+        "delta": 0
+    },
+    "fg": {
+        "upscale": 2,
+        "border": 0
+    },
+    "rotate": 90,
+    "height": 2778,
+    "width": 1284
+}</pre></td>
     </tr>
 </table>
 
