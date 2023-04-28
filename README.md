@@ -14,6 +14,6 @@ Currently it assumes that height > width.
 
 **Output:**
 
-Ran with `./run kiseki.png 2778 1284`.
+Ran with `./run kiseki.png`.
 
 <img src="images/kiseki_wallpaper.png" width="200px"/>

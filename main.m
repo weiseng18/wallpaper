@@ -1,4 +1,4 @@
-function [] = main(IMAGE_PATH, HEIGHT, WIDTH)
+function [] = main(IMAGE_PATH)
     % Read options and parse JSON
     OPT = parse_json('options.json');
 
@@ -9,7 +9,7 @@ function [] = main(IMAGE_PATH, HEIGHT, WIDTH)
     fg = imresize(I, OPT.upscale);
 
     % Generate background
-    bg = generate_background(HEIGHT, WIDTH, I, OPT.blur, OPT.delta);
+    bg = generate_background(OPT.height, OPT.width, I, OPT.blur, OPT.delta);
 
     % Add white border to foreground
     fg = add_border(fg, OPT.border);
