@@ -11,7 +11,7 @@ Currently it assumes that height > width.
 `./run <path-to-image>`
 
 - Writes to `output.png` in the current directory.
-- Reads `options.json` in the current directory for options. See below for the format of this file.
+- Reads `config.json` in the current directory for config. See below for the format of this file.
 
 ## Example
 
@@ -19,7 +19,7 @@ Currently it assumes that height > width.
     <tr>
         <th>Input</th>
         <th>Output</th>
-        <th>Options</th>
+        <th>Config</th>
     </tr>
     <tr>
         <td><img src="images/kiseki.png" width="200px"/></td>
@@ -42,9 +42,9 @@ Currently it assumes that height > width.
     </tr>
 </table>
 
-## Options file
+## Config file
 
-The options file is a JSON file with the following structure:
+The config file is a JSON file with the following structure:
 
 ```json
 {

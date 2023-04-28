@@ -1,6 +1,6 @@
 function [] = main(IMAGE_PATH)
     % Read options and parse JSON
-    OPT = parse_json('options.json');
+    OPT = parse_json('config.json');
 
     % Read image
     I = imread(IMAGE_PATH);
