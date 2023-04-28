@@ -1,21 +1,18 @@
 function [] = main(IMAGE_PATH, HEIGHT, WIDTH)
-    % Constants
-    BLUR = 15;
-    DELTA = 60;    % crop from top and bottom
-    UPSCALE = 2;   % upscale foreground image
-    BORDER = 10;   % white border around foreground image
+    % Read options and parse JSON
+    OPT = parse_json('options.json');
 
     % Read image
     I = imread("./images/" + IMAGE_PATH);
 
     % Generate foreground
-    fg = imresize(I, UPSCALE);
+    fg = imresize(I, OPT.upscale);
 
     % Generate background
-    bg = generate_background(HEIGHT, WIDTH, I, BLUR, DELTA);
+    bg = generate_background(HEIGHT, WIDTH, I, OPT.blur, OPT.delta);
 
     % Add white border to foreground
-    fg = add_border(fg, BORDER);
+    fg = add_border(fg, OPT.border);
 
     % Overlay image onto the center of the background
     res = overlay_image(fg, bg);
