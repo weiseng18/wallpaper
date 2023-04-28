@@ -13,8 +13,15 @@ function img = generate_background(H, W, image, blur, delta)
     R = size(image, 1);
     C = size(image, 2);
 
-    % Upscale the image by a factor of H/R.
-    ratio = (H + delta * 2) / R;
+    if H > W
+        % Increase R to H + delta * 2.
+        ratio = (H + delta * 2) / R;
+    else
+        % Increase C to W.
+        ratio = W / C;
+    end
+
+    % Upscale the image.
     img = imresize(image, ratio);
 
     % Apply blur.
@@ -22,6 +29,6 @@ function img = generate_background(H, W, image, blur, delta)
 
     % Crop the center of the image to size H x W.
     left = size(img, 2) / 2 - W / 2;
-    top = delta;
+    top = delta + size(img, 1) / 2 - H / 2;
     img = imcrop(img, [left, top, W, H]);
 end
