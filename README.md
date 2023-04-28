@@ -14,6 +14,21 @@ Currently it assumes that height > width.
 
 **Output:**
 
-Ran with `./run images/kiseki.png`.
+Ran with `./run images/kiseki.png` and the following config:
+
+```json
+{
+    "bg": {
+        "blur": 15,
+        "delta": 60
+    },
+    "fg": {
+        "upscale": 2,
+        "border": 0
+    },
+    "height": 2778,
+    "width": 1284
+}
+```
 
 <img src="images/kiseki_wallpaper.png" width="200px"/>
