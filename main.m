@@ -3,7 +3,7 @@ function [] = main(IMAGE_PATH)
     OPT = parse_json('options.json');
 
     % Read image
-    I = imread("./images/" + IMAGE_PATH);
+    I = imread(IMAGE_PATH);
 
     % Generate foreground
     fg = imresize(I, OPT.fg.upscale);
