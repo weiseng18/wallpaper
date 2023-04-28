@@ -20,8 +20,8 @@ Given a square image, this script creates a wallpaper with
         <th>Config</th>
     </tr>
     <tr>
-        <td><img src="images/kiseki.png" width="200px"/></td>
-        <td><img src="images/kiseki_wallpaper.png" width="200px"/></td>
+        <td align="center"><img src="images/kiseki.png" width="200px"/></td>
+        <td align="center"><img src="images/kiseki_wallpaper.png" width="200px"/></td>
         <td><pre>
 {
     "bg": {
@@ -38,8 +38,8 @@ Given a square image, this script creates a wallpaper with
 }</pre></td>
     </tr>
     <tr>
-        <td><img src="images/kyu-kurarin.jpeg" width="200px"/></td>
-        <td><img src="images/kyu-kurarin_wallpaper_portrait.png" width="200px"/></td>
+        <td align="center"><img src="images/kyu-kurarin.jpeg" width="200px"/></td>
+        <td align="center"><img src="images/kyu-kurarin_wallpaper_portrait.png" width="200px"/></td>
         <td><pre>
 {
     "bg": {
@@ -56,8 +56,8 @@ Given a square image, this script creates a wallpaper with
 }</pre></td>
     </tr>
     <tr>
-        <td><img src="images/kyu-kurarin.jpeg" width="200px"/></td>
-        <td><img src="images/kyu-kurarin_wallpaper_landscape.png" width="300px"/></td>
+        <td align="center"><img src="images/kyu-kurarin.jpeg" width="200px"/></td>
+        <td align="center"><img src="images/kyu-kurarin_wallpaper_landscape.png" width="400px"/></td>
         <td><pre>
 {
     "bg": {
