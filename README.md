@@ -39,7 +39,7 @@ Given a square image, this script creates a wallpaper with
     </tr>
     <tr>
         <td><img src="images/kyu-kurarin.jpeg" width="200px"/></td>
-        <td><img src="images/kyu-kurarin_wallpaper.png" width="200px"/></td>
+        <td><img src="images/kyu-kurarin_wallpaper_portrait.png" width="200px"/></td>
         <td><pre>
 {
     "bg": {
@@ -53,6 +53,24 @@ Given a square image, this script creates a wallpaper with
     "rotate": 90,
     "height": 2778,
     "width": 1284
+}</pre></td>
+    </tr>
+    <tr>
+        <td><img src="images/kyu-kurarin.jpeg" width="200px"/></td>
+        <td><img src="images/kyu-kurarin_wallpaper_landscape.png" width="300px"/></td>
+        <td><pre>
+{
+    "bg": {
+        "blur": 25,
+        "delta": 0
+    },
+    "fg": {
+        "upscale": 2,
+        "border": 0
+    },
+    "rotate": 90,
+    "height": 1080,
+    "width": 1920
 }</pre></td>
     </tr>
 </table>
