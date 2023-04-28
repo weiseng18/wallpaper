@@ -5,7 +5,7 @@
 
 # Check that the correct number of parameters were passed
 if [ $# -ne 1 ]; then
-    echo "Usage: $0 <image> <height> <width>"
+    echo "Usage: $0 <image>"
     exit 1
 fi
 
