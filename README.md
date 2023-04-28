@@ -26,6 +26,7 @@ Ran with `./run images/kiseki.png` and the following config:
         "upscale": 2,
         "border": 0
     },
+    "rotate": 0,
     "height": 2778,
     "width": 1284
 }

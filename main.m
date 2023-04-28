@@ -5,6 +5,9 @@ function [] = main(IMAGE_PATH)
     % Read image
     I = imread(IMAGE_PATH);
 
+    % Rotate image by specified angle (counter-clockwise)
+    I = imrotate(I, OPT.rotate);
+
     % Generate foreground
     fg = imresize(I, OPT.fg.upscale);
 

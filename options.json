@@ -7,6 +7,7 @@
         "upscale": 2,
         "border": 10
     },
+    "rotate": 90,
     "height": 2778,
     "width": 1284
 }
