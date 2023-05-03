@@ -48,7 +48,7 @@ Given a square image, this script creates a wallpaper with
     },
     "fg": {
         "upscale": 2,
-        "border": 0
+        "border": 10
     },
     "rotate": 90,
     "height": 2778,
@@ -66,7 +66,7 @@ Given a square image, this script creates a wallpaper with
     },
     "fg": {
         "upscale": 2,
-        "border": 0
+        "border": 10
     },
     "rotate": 90,
     "height": 1080,
