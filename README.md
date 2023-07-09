@@ -75,6 +75,26 @@ Given a square image, this script creates a wallpaper with
     "enable_fg": true
 }</pre></td>
     </tr>
+    <tr>
+        <td align="center"><img src="images/tada-koe-hitotsu.png" width="200px"/></td>
+        <td align="center"><img src="images/tada-koe-hitotsu_wallpaper.png" width="200px"/></td>
+        <td><pre>
+{
+    "bg": {
+        "blur": 0,
+        "delta": 0
+    },
+    "fg": {
+        "upscale": 1,
+        "border": 0
+    },
+    "rotate": 0,
+    "height": 2778,
+    "width": 1284,
+    "enable_fg": false
+
+}</pre></td>
+    </tr>
 </table>
 
 ## Config file
