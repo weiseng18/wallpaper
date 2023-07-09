@@ -25,7 +25,9 @@ function img = generate_background(H, W, image, blur, delta)
     img = imresize(image, ratio);
 
     % Apply blur.
-    img = imgaussfilt(img, blur);
+    if blur > 0
+        img = imgaussfilt(img, blur);
+    end
 
     % Crop the center of the image to size H x W.
     left = size(img, 2) / 2 - W / 2;
