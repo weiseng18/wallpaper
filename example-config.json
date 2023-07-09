@@ -9,5 +9,6 @@
     },
     "rotate": 90,
     "height": 2778,
-    "width": 1284
+    "width": 1284,
+    "enable_fg": true
 }

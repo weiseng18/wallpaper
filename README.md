@@ -52,7 +52,8 @@ Given a square image, this script creates a wallpaper with
     },
     "rotate": 90,
     "height": 2778,
-    "width": 1284
+    "width": 1284,
+    "enable_fg": true
 }</pre></td>
     </tr>
     <tr>
@@ -70,7 +71,8 @@ Given a square image, this script creates a wallpaper with
     },
     "rotate": 90,
     "height": 1080,
-    "width": 1920
+    "width": 1920,
+    "enable_fg": true
 }</pre></td>
     </tr>
 </table>
@@ -91,7 +93,8 @@ The config file is a JSON file with the following structure:
     },
     "rotate": 0,
     "height": 2778,
-    "width": 1284
+    "width": 1284,
+    "enable_fg": true
 }
 ```
 
